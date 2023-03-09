@@ -1,0 +1,107 @@
+.give_classes {
+  width: 100vw;
+  max-width: 700px;
+  height: 100vh;
+}
+
+.give_classes main {
+  background-color: var(--color-box-base);
+  width: 100%;
+  max-width: 74rem;
+  border-radius: 0.8rem;
+  margin: -3.2rem auto 3.2rem;
+  padding-top: 6.4rem;
+  overflow: hidden;
+}
+
+.give_classes main label {
+  color: var(--color-text-complement);
+}
+
+.give_classes main fieldset {
+  border: 0;
+  padding: 0 2.4rem;
+}
+
+.give_classes main fieldset + fieldset {
+  margin-top: 6.4rem;
+}
+
+.give_classes main fieldset legend {
+  font: 700 2.4rem var(--font-archivo);
+  color: var(--color-text-title);
+  margin-bottom: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding-bottom: 1.6rem;
+  border-bottom: 1px solid var(--color-line-in-white);
+}
+
+.give_classes main fieldset .schedule_block {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.give_classes main footer {
+  padding: 4rem 2.4rem;
+  margin-top: 6.4rem;
+  background: var(--color-box-footer);
+  border-top: 1px solid var(--color-line-in-white);
+}
+
+.give_classes main footer p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  color: var(--color-text-complement);
+}
+
+.give_classes main footer p img {
+  width: 4rem;
+  margin-right: 2rem;
+}
+
+.give_classes main footer button {
+  width: 100%;
+  height: 5.2rem;
+  background-color: var(--color-secundary);
+  font: 700 1.6rem var(--font-archivo);
+  color: var(--color-button-text);
+  border: 0;
+  border-radius: 0.8rem;
+  cursor: pointer;
+  text-decoration: none;
+  margin-top: 3.2rem;
+}
+
+.give_classes main footer button:hover {
+  transition: 0.2s;
+  background-color: var(--color-secundary-dark);
+}
+
+@media (min-width: 700px) {
+  .give_classes {
+    max-width: 100vw;
+  }
+
+  .give_classes main fieldset {
+    padding: 0 6.4rem;
+  }
+
+  .give_classes main footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4rem 6.4rem;
+  }
+
+  .give_classes main footer button {
+    width: 20rem;
+    margin-top: 0;
+  }
+}

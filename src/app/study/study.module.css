@@ -1,0 +1,48 @@
+.study {
+  max-width: 700px;
+  height: 100vh;
+}
+
+.search_teacher {
+  margin-top: 3.2rem;
+}
+
+.search_teacher label {
+  color: var(--color-text-in-primary);
+}
+
+.study main {
+  width: 90%;
+  margin: 3.2rem auto;
+}
+
+/* TABLET */
+
+@media (min-width: 700px) {
+  .study {
+    min-width: 100%;
+  }
+
+  .search_teacher {
+    display: flex;
+    gap: 16px;
+    margin-bottom: -52px;
+  }
+
+  .search_teacher .input_block + .input_block {
+    margin-top: 0;
+  }
+
+  .study main {
+    max-width: 576.77px;
+    padding: 1rem 0;
+  }
+}
+
+/* DESKTOP */
+
+@media (min-width: 1100px) {
+  .search_teacher {
+    margin-bottom: -48px;
+  }
+}

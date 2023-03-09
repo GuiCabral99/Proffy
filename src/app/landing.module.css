@@ -1,0 +1,168 @@
+/* MOBILE */
+
+.page_landing {
+  width: 100vw;
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: var(--color-text-in-primary);
+  background: var(--color-primary);
+}
+
+/* stilo global */
+.container {
+  width: 90vw;
+  max-width: 700px;
+}
+
+.page_landing .logo_container img {
+  height: 10rem;
+  width: auto;
+}
+
+.hero_image {
+  display: flex;
+  margin: auto;
+  width: 40rem;
+  height: auto;
+}
+
+.logo_container {
+  text-align: center;
+  margin-bottom: 3.2rem;
+}
+
+.logo_container h2 {
+  font-weight: 500;
+  font-size: 2.4rem;
+  line-height: 4.6rem;
+  margin-top: 0.8rem;
+}
+
+.btn_container {
+  display: flex;
+  justify-content: center;
+  margin: 3.2rem 0;
+}
+
+.btn_container .link {
+  width: 16rem;
+  height: 8rem;
+  border-radius: 0.8rem;
+  font: 700 2rem var(--font-archivo);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 1rem;
+
+  text-decoration: none;
+  color: var(--color-button-text);
+}
+
+.btn_container .link img {
+  width: 4rem;
+  height: auto;
+  margin-right: 0.8rem;
+}
+
+.btn_container .study {
+  background-color: var(--color-primary-lighter);
+}
+
+.btn_container .give_classes {
+  background-color: var(--color-secundary);
+}
+
+.btn_container .study:hover {
+  background-color: var(--color-primary-light);
+  transition: background-color 0.2s;
+}
+
+.btn_container .give_classes:hover {
+  background-color: var(--color-secundary-dark);
+  transition: background-color 0.2s;
+}
+
+.total_connections {
+  font-size: 1.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.total_connections p {
+  display: flex;
+  align-items: center;
+}
+
+.total_connections img {
+  margin-left: 0.8rem;
+  width: 1.8rem;
+  height: auto;
+}
+
+/* DESKTOP */
+
+@media (min-width: 1100px) {
+  .page_landing_content {
+    max-width: 1100px;
+    display: grid;
+    grid-template-rows: 350px 1fr;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-areas:
+      "logo hero hero"
+      "btn btn connections";
+  }
+
+  .logo_container {
+    grid-area: logo;
+    align-self: center;
+    text-align: left;
+    margin: 0;
+  }
+
+  .page_landing .logo_container img {
+    height: 100%;
+    width: auto;
+  }
+
+  .logo_container h2 {
+    font-size: 4.3rem;
+    text-align: initial;
+  }
+
+  .hero_image {
+    grid-area: hero;
+    width: 100%;
+    justify-self: end;
+  }
+
+  .btn_container {
+    grid-area: btn;
+    justify-content: flex-start;
+  }
+
+  .btn_container .link:first-child {
+    margin-right: 1.8rem;
+  }
+
+  .btn_container .link {
+    font-size: 2.8rem;
+    width: 38rem;
+    height: 12rem;
+  }
+
+  .btn_container .link img {
+    margin-right: 1.5rem;
+  }
+
+  .total_connections {
+    grid-area: connections;
+    justify-self: end;
+    font-size: 1.6rem;
+  }
+}
