@@ -1,4 +1,4 @@
-import { Poppins, Archivo } from "@next/font/google";
+import { Poppins, Archivo } from "next/font/google";
 
 export const poppins = Poppins({
   subsets: ["latin"],
