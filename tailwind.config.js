@@ -1,18 +1,43 @@
+// const {fontfamily} = require('tailwindcss/defaultTheme')
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/components/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/app/**/*.{js,ts,jsx,tsx,mdx}',
+    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+      gridTemplateRows: {
+        layout: "350px, 6rem",
       },
+    },
+
+    colors: {
+      "color-background": "#f0f0f7",
+      "color-primary-lighter": "#9871f5",
+      "color-primary-light": "#916bea",
+      "color-primary": "#8257e5",
+      "color-primary-dark": "#774dd6",
+      "color-primary-darker": "#6842c2",
+      "color-secundary": "#04d361",
+      "color-secundary-dark": "#04bf58",
+      "color-title-in-primary": "#ffffff",
+      "color-text-in-primary": "#d4c2ff",
+      "color-text-title": "#32264d",
+      "color-text-complement": "#9c98a6",
+      "color-text-base": "#6a6180",
+      "color-line-in-white": "#e6e6f0",
+      "color-input-background": "#f8f8fc",
+      "color-button-text": "#ffffff",
+      "color-box-base": "#ffffff",
+      "color-box-footer": "#fafafc",
+    },
+    fontFamily: {
+      poppins: "var(--font-poppins)",
+      archivo: "var(--font-archivo)",
     },
   },
   plugins: [],
-}
+};
