@@ -109,7 +109,7 @@ export default function giveClasses() {
             {fields.map((field, index) => (
               <div
                 key={index}
-                className="md:flex md:justify-center md:space-x-4 py-4 border-t border-b-color-line-in-white"
+                className="md:flex md:justify-center md:space-x-4 py-4 border-t border-color-line-in-white"
               >
                 <button
                   className={`h-6 md:hidden ${
