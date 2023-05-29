@@ -17,10 +17,11 @@ export default function Select({
         className="rounded-md outline-none h-14 w-full mt-1.5 bg-color-input-background border border-color-line-in-white py-0 px-3 text-base text-color-text-title font-archivo"
         name={name}
         id={name}
+        defaultValue="default"
       >
         <option
           disabled
-          selected
+          value="default"
           hidden
           {...rest}
           className="text-color-text-title"
